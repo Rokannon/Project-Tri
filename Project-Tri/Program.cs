@@ -12,7 +12,7 @@ namespace Project_Tri
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(GeomUtils.CalculateRightTriangleArea(3, 4, 5));
+            Console.WriteLine(GeomUtils.CalculateRightTriangleArea(3, -4, 5));
             Console.ReadLine();
         }
     }

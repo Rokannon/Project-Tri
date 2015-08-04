@@ -27,7 +27,7 @@ namespace com.mindbox
         /// <returns>Area of a triangle with specified metrics.</returns>
         public static double CalculateRightTriangleArea(double a, double b, double c)
         {
-            Contract.Requires(a >= 0 && b >= 0 && c >= 0, "Specified arguments must be positive.");
+            Contract.Requires(a > 0 && b > 0 && c > 0, "Specified arguments must be positive.");
             Contract.Requires(checked(Math.Abs(c * c - a * a - b * b)) < EPSILON,
                 "Specified arguments does not belong to a right triangle.");
             return checked(0.5 * a * b);
